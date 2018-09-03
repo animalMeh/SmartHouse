@@ -43,11 +43,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="2LevelInterface\IDoorControl.cs" />
+    <Compile Include="2LevelInterface\ILightControl.cs" />
+    <Compile Include="1LevelInterface\ILockable.cs" />
+    <Compile Include="2LevelInterface\IShutterControl.cs" />
+    <Compile Include="1LevelInterface\ISwitchable.cs" />
+    <Compile Include="1LevelInterface\ITemperature.cs" />
+    <Compile Include="1LevelInterface\ISignable.cs" />
+    <Compile Include="2LevelInterface\IVentilationControl.cs" />
+    <Compile Include="2LevelInterface\IWarmingControl.cs" />
+    <Compile Include="2LevelInterface\IWindowsControl.cs" />
+    <Compile Include="Items\Boiler.cs" />
+    <Compile Include="Items\ElectricKettle.cs" />
+    <Compile Include="Items\MainDoor.cs" />
+    <Compile Include="2LevelInterface\IWaterable.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="ItemsSignalable\PenetrationSensor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WaterState\WaterState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram\ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
